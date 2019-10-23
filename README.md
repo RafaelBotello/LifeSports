@@ -77,9 +77,9 @@ First we need to create the `db` directory where the database files will live in
 
     $ https://lifesportsr2h.herokuapp.com/
 
-## Author
+## Authors
 
-Rafael Botello
+Rafael Botello , Diana Hinojosa , and Shirley Damiron
 
 ## License
 
