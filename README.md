@@ -76,6 +76,7 @@ First we need to create the `db` directory where the database files will live in
 ## App On Heroku
 
     $ https://lifesportsr2h.herokuapp.com/
+    [https://lifesportsr2h.herokuapp.com/]
 
 ## Authors
 
@@ -83,4 +84,4 @@ Rafael Botello , Diana Hinojosa , and Shirley Damiron
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.mb) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
