@@ -6,18 +6,21 @@ An database administration website built in react using API's to connect to a Mo
 
 You need git to clone the repository. You can get git from http://git-scm.com/.
 
-A number of node.js tools is necessary to initialize and test the project. You must have node.js and its package manager (npm) installed. You can get them from http://nodejs.org/. The tools/modules used in this project are listed in package.json and include express, mongodb and mongoose.
+A number of node.js tools are necessary to initialize and test the project. You must have node.js and its package manager `npm` installed. You can get them from http://nodejs.org/. The tools/modules used in this project are listed in package.json and include: 
+* Express, 
+* MongoDB
+* Mongoose
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and a node global package `Yarn` installed in your environement.
 
 - ### MongoDB
-  The project uses MongoDB as a database. If you are on Mac and using Homebrew package manager the installation is as simple as brew install mongodb.
+  The project uses MongoDB as a database. If you are on Mac and using Homebrew package manager the installation is as simple as `brew install mongodb`.
 
 ### Node
 
 - #### Node installation on Windows
 
-  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+  Just go on [Official Node.js website](https://nodejs.org/) and download the installer.
   Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
 - #### Node installation on Ubuntu
@@ -80,4 +83,4 @@ Rafael Botello
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.mb) file for details.
