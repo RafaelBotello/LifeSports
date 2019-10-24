@@ -68,7 +68,6 @@ export default class ExercisesList extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <>
         <div className="loggedContainer">
           <h3 className="logged">Logged Exercises</h3>
@@ -145,25 +144,6 @@ export default class ExercisesList extends Component {
           />
         </div>
       </>
-=======
-      <div>
-        <h3>Logged Exercises</h3>
-        <table className="table">
-          <thead className="thead-light">
-            <tr>
-              <th>Username</th>
-              <th>Academy</th>
-              <th>Coach</th>
-              <th>Description</th>
-              <th>Duration</th>
-              <th>Date</th>
-              <th>Actions</th>
-            </tr>
-          </thead>
-          <tbody>{this.exerciseList()}</tbody>
-        </table>
-      </div>
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
     );
   }
 }

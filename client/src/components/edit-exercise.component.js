@@ -115,14 +115,6 @@ export default class EditExercise extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-    <div>
-      <h3 className="logged">Edit Exercise Log</h3>
-      <form onSubmit={this.onSubmit}>
-        <div className="group"> 
-          <label>Username: </label>
-          <select ref="userInput"
-=======
       <div>
         <h3>Edit Exercise Log</h3>
         <form onSubmit={this.onSubmit}>
@@ -130,26 +122,9 @@ export default class EditExercise extends Component {
             <label>Username: </label>
             <select
               ref="userInput"
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
               required
               className="control"
               value={this.state.username}
-<<<<<<< HEAD
-              onChange={this.onChangeUsername}>
-              {
-                this.state.users.map(function(user) {
-                  return <option 
-                    key={user}
-                    value={user}>{user}
-                    </option>;
-                })
-              }
-          </select>
-        </div>
-        <div className="group"> 
-          <label>Description: </label>
-          <input  type="text"
-=======
               onChange={this.onChangeUsername}
             >
               {this.state.users.map(function(user) {
@@ -196,20 +171,10 @@ export default class EditExercise extends Component {
             <label>Description: </label>
             <input
               type="text"
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
               required
               className="control"
               value={this.state.description}
               onChange={this.onChangeDescription}
-<<<<<<< HEAD
-              />
-        </div>
-        <div className="group">
-          <label>Duration (in minutes): </label>
-          <input 
-              type="text" 
-              className="control"
-=======
             />
           </div>
           <div className="form-group">
@@ -217,7 +182,6 @@ export default class EditExercise extends Component {
             <input
               type="text"
               className="form-control"
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
               value={this.state.duration}
               onChange={this.onChangeDuration}
             />
@@ -229,25 +193,6 @@ export default class EditExercise extends Component {
                 selected={this.state.date}
                 onChange={this.onChangeDate}
               />
-<<<<<<< HEAD
-        </div>
-        <div className="group">
-          <label>Date: </label>
-          <div>
-            <DatePicker
-              selected={this.state.date}
-              onChange={this.onChangeDate}
-            />
-          </div>
-        </div>
-
-        <div className="group">
-          <input type="submit" value="Edit Exercise Log" className="control" />
-        </div>
-      </form>
-    </div>
-    )
-=======
             </div>
           </div>
 
@@ -261,6 +206,5 @@ export default class EditExercise extends Component {
         </form>
       </div>
     );
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
   }
 }
