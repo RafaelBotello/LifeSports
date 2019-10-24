@@ -1,3 +1,8 @@
+## App On Heroku
+
+    $ https://lifesportshackathon.herokuapp.com/
+
+
 # LifeSports Hackathon App
 
 An database administration website built in react using API's to connect to a Mongo database.
@@ -73,10 +78,6 @@ First we need to create the `db` directory where the database files will live in
 
     $ yarn build
     
-## App On Heroku
-
-    $ https://lifesportshackathon.herokuapp.com/
-
 ## Authors
 
 Rafael Botello , Diana Hinojosa and Shirley Damiron
