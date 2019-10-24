@@ -28,9 +28,7 @@ export default class CreateCoach extends Component {
 
     console.log(coach);
 
-    axios
-      .post("/coaches/add", coach)
-      .then(res => console.log(res.data).catch(err => console.log(err)));
+    axios.post("/coaches/add", coach).then(res => console.log(res.data));
 
     this.setState({
       coach: ""
