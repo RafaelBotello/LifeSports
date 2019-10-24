@@ -8,6 +8,8 @@ import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 import CreateCoach from "./components/create-coach.component";
+import Carousel from "./components/Home/Carousel.jsx";
+import AboutCoaches from "./components/Home/AboutCoaches.jsx";
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
         <Route path="/create" component={CreateExercise} />
         <Route path="/user" component={CreateUser} />
         <Route path="/coach" component={CreateCoach} />
+        <Route path="/" exact component={Carousel} />
+        <Route path="/aboutcoaches" component={AboutCoaches} />
+        <Route path="/exercises" component={ExercisesList} />
       </div>
     </Router>
   );
