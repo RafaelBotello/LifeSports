@@ -1,59 +1,61 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-export default class CreateUser extends Component {
+export default class CreateCoach extends Component {
   constructor(props) {
     super(props);
 
-    this.onChangeUsername = this.onChangeUsername.bind(this);
+    this.onChangeCoach = this.onChangeCoach.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      username: ""
+      coach: ""
     };
   }
 
-  onChangeUsername(e) {
+  onChangeCoach(e) {
     this.setState({
-      username: e.target.value
+      coach: e.target.value
     });
   }
 
   onSubmit(e) {
     e.preventDefault();
 
-    const user = {
-      username: this.state.username
+    const coach = {
+      coach: this.state.coach
     };
 
-    console.log(user);
+    console.log(coach);
 
-    axios.post("/users/add", user).then(res => console.log(res.data));
+    axios
+      .post("/coaches/add", coach)
+      .then(res => console.log(res.data).catch(err => console.log(err)));
 
     this.setState({
-      username: ""
+      coach: ""
     });
   }
 
   render() {
     return (
       <div>
-        <h3>Create New User</h3>
+        <h3>Create New Coach</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
-            <label>Username: </label>
+            <label>Coach: </label>
             <input
               type="text"
               required
               className="form-control"
-              value={this.state.username}
-              onChange={this.onChangeUsername}
+              value={this.state.coach}
+              onChange={this.onChangeCoach}
             />
           </div>
           <div className="form-group">
             <input
               type="submit"
-              value="Create User"
+              value="Add coach"
               className="btn btn-primary"
             />
           </div>
