@@ -7,17 +7,26 @@ nav {
 }
 
 .navBrand {
-    color: rgb(2, 2, 92);
+    color: #ffffff;
     text-decoration: none;
     padding: 20px 0px;
     font-size: 60px;
+}
+
+
+.nav-Link {
+    font-size: 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .navLink {
     font-size: 30px;
     padding: 20px;
     text-decoration: none;
-    color: black;
+    color: #ffffff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
