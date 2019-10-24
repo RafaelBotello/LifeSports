@@ -88,6 +88,7 @@ router.post("/update/:id", async (req, res) => {
       $set: {
         username: req.body.username,
         academy: req.body.academy,
+        coach: req.body.coach,
         description: req.body.description,
         duration: req.body.duration,
         date: Date.now()

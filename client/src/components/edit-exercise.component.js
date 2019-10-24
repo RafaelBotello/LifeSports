@@ -9,6 +9,7 @@ export default class EditExercise extends Component {
 
     this.onChangeUsername = this.onChangeUsername.bind(this);
     this.onChangeAcademy = this.onChangeAcademy.bind(this);
+    this.onChangeCoach = this.onChangeCoach.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeDuration = this.onChangeDuration.bind(this);
     this.onChangeDate = this.onChangeDate.bind(this);
@@ -17,6 +18,7 @@ export default class EditExercise extends Component {
     this.state = {
       username: "",
       academy: "",
+      coach: "",
       description: "",
       duration: 0,
       date: new Date(),
@@ -66,6 +68,12 @@ export default class EditExercise extends Component {
     });
   }
 
+  onChangeCoach(e) {
+    this.setState({
+      coach: e.target.value
+    });
+  }
+
   onChangeDescription(e) {
     this.setState({
       description: e.target.value
@@ -90,6 +98,7 @@ export default class EditExercise extends Component {
     const exercise = {
       username: this.state.username,
       academy: this.state.academy,
+      coach: this.state.coach,
       description: this.state.description,
       duration: this.state.duration,
       date: this.state.date
@@ -139,6 +148,23 @@ export default class EditExercise extends Component {
               </option>
               <option value="Life Kicks">Life Kicks</option>
               <option value="Life Hoops">Life Hoops</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Coach: </label>
+            <select
+              required
+              className="form-control"
+              value={this.state.coach}
+              onChange={this.onChangeCoach}
+            >
+              {this.state.coaches.map(function(coach) {
+                return (
+                  <option key={coach} value={coach}>
+                    {coach}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <div className="form-group">

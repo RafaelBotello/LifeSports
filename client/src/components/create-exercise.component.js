@@ -9,6 +9,7 @@ export default class CreateExercise extends Component {
 
     this.onChangeUsername = this.onChangeUsername.bind(this);
     this.onChangeAcademy = this.onChangeAcademy.bind(this);
+    this.onChangeCoach = this.onChangeCoach.bind(this);
     this.onChangeDescription = this.onChangeDescription.bind(this);
     this.onChangeDuration = this.onChangeDuration.bind(this);
     this.onChangeDate = this.onChangeDate.bind(this);
@@ -17,10 +18,12 @@ export default class CreateExercise extends Component {
     this.state = {
       username: "",
       academy: "",
+      coach: "",
       description: "",
       duration: 0,
       date: new Date(),
-      users: []
+      users: [],
+      coaches: []
     };
   }
 
@@ -38,6 +41,20 @@ export default class CreateExercise extends Component {
       .catch(error => {
         console.log(error);
       });
+
+    axios
+      .get("/coaches/")
+      .then(response => {
+        if (response.data.length > 0) {
+          this.setState({
+            coaches: response.data.map(coach => coach.coach),
+            coach: response.data[0].coach
+          });
+        }
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }
 
   onChangeUsername(e) {
@@ -49,6 +66,12 @@ export default class CreateExercise extends Component {
   onChangeAcademy(e) {
     this.setState({
       academy: e.target.value
+    });
+  }
+
+  onChangeCoach(e) {
+    this.setState({
+      coach: e.target.value
     });
   }
 
@@ -76,6 +99,7 @@ export default class CreateExercise extends Component {
     const exercise = {
       username: this.state.username,
       academy: this.state.academy,
+      coach: this.state.coach,
       description: this.state.description,
       duration: this.state.duration,
       date: this.state.date
@@ -124,6 +148,26 @@ export default class CreateExercise extends Component {
               </option>
               <option value="Life Kicks">Life Kicks</option>
               <option value="Life Hoops">Life Hoops</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Coach: </label>
+            <select
+              required
+              className="form-control"
+              value={this.state.coach}
+              onChange={this.onChangeCoach}
+            >
+              <option value="" disabled>
+                -- Select a coach --
+              </option>
+              {this.state.coaches.map(function(coach) {
+                return (
+                  <option key={coach} value={coach}>
+                    {coach}
+                  </option>
+                );
+              })}
             </select>
           </div>
           <div className="form-group">
