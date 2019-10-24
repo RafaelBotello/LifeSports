@@ -5,21 +5,12 @@
 
 /*****************************************   Nav Bar   ***********************************************/
 
-<<<<<<< HEAD
-@import "../src/Assets/CSS/Partials/_navBar.css";
-
-/*****************************************   Home Page   *********************************************/
-
-@import "../src/Assets/CSS/Partials/_exerciseList.css";
-@import "../src/Assets/CSS/Partials/_editExercise.css";
-=======
 @import "./Assets/CSS/Partials/_navBar.css";
 
 /*****************************************   Home Page   *********************************************/
 
 @import "./Assets/CSS/Partials/_exerciseList.css";
 @import "./Assets/CSS/Partials/_editExercise.css";
->>>>>>> 05e4b3b1af1830067ed237399e31b8bf6c097062
 
 /* About the Coaches */
 
