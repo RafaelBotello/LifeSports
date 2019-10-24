@@ -1,0 +1,17 @@
+.group {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+label {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.control {
+    margin: 0 10px;
+    border-radius: 20px;
+    padding: 3px;
+}
