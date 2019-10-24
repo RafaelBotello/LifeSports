@@ -1,4 +1,9 @@
-# LifeSports Challenge App
+## App On Heroku
+
+    $ https://lifesportshackathon.herokuapp.com/
+
+
+# LifeSports Hackathon App
 
 An database administration website built in react using API's to connect to a Mongo database.
 
@@ -61,7 +66,7 @@ First we need to create the `db` directory where the database files will live in
 
 ## Install
 
-    $ git clone https://github.com/RafaelBotello/LifeSportsApp
+    $ git clone https://github.com/RafaelBotello/LifeSports
     $ cd LifeSportsApp
     $ yarn install
 
@@ -73,14 +78,9 @@ First we need to create the `db` directory where the database files will live in
 
     $ yarn build
     
-## App On Heroku
-
-    $ https://lifesportsr2h.herokuapp.com/
-    [https://lifesportsr2h.herokuapp.com/]
-
 ## Authors
 
-Rafael Botello , Diana Hinojosa , and Shirley Damiron
+Rafael Botello , Diana Hinojosa and Shirley Damiron
 
 ## License
 
