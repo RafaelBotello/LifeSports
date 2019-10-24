@@ -31,3 +31,7 @@
     transform: rotate(360deg);
   }
 }
+
+@import "./CSS/Partials/_exerciseList.css";
+@import "./CSS/Partials/_editExercise.css";
+@import "./CSS/Partials/_navBar.css";

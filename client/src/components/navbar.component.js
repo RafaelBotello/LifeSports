@@ -2,26 +2,23 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar(){ 
-    return (
-      <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <Link to="/" className="navbar-brand">LifeSports</Link>
-        <div className="collpase navbar-collapse">
-        <ul className="navbar-nav mr-auto">
-          <li className="navbar-item">
-          <Link to="/" className="nav-link">Home</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/exercises" className="nav-link">Exercises</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/create" className="nav-link">Post New Workout</Link>
-          </li>
-          <li className="navbar-item">
-          <Link to="/user" className="nav-link">Create User</Link>
-          </li>
-        </ul>
-        </div>
-      </nav>
-    );  
+  return (
+    <nav>
+      <Link to="/" className="navBrand">LifeSports</Link>
+      <div>
+      <ul className="ulContainer">
+        <li>
+        <Link to="/" className="navLink">Exercises</Link>
+        </li>
+        <li>
+        <Link to="/create" className="navLink">Post New Workout</Link>
+        </li>
+        <li>
+        <Link to="/user" className="navLink">Create User</Link>
+        </li>
+      </ul>
+      </div>
+    </nav>
+  );  
 }
 export default Navbar
