@@ -80,7 +80,7 @@ First we need to create the `db` directory where the database files will live in
 
 ## Authors
 
-Rafael Botello , Diana Hinojosa , and Shirley Damiron
+Rafael Botello , Diana Hinojosa and Shirley Damiron
 
 ## License
 
