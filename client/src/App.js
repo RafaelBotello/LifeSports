@@ -1,12 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-<<<<<<< HEAD
-import { BrowserRouter as Router, Route} from "react-router-dom";
-import "../src/App.css"
-=======
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
 
 import Navbar from "./components/navbar.component";
 import ExercisesList from "./components/exercises-list.component";
@@ -21,15 +16,6 @@ function App() {
   return (
     <Router>
       <div className="container">
-<<<<<<< HEAD
-      <Navbar />
-      <br/>
-      {/* <Route path="/" exact component={Home} /> */}
-      <Route path="/" exact component={ExercisesList} />
-      <Route path="/edit/:id" component={EditExercise} />
-      <Route path="/create" component={CreateExercise} />
-      <Route path="/user" component={CreateUser} />
-=======
         <Navbar />
         <Route path="/" exact component={ExercisesList} />
         <Route path="/edit/:id" component={EditExercise} />
@@ -39,7 +25,6 @@ function App() {
         <Route path="/" exact component={Carousel} />
         <Route path="/aboutcoaches" component={AboutCoaches} />
         <Route path="/exercises" component={ExercisesList} />
->>>>>>> 7565dce1cba7e99cd456c29f5f0cfabe29195e75
       </div>
     </Router>
   );
