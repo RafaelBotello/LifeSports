@@ -75,6 +75,8 @@ export default class ExercisesList extends Component {
             <thead className="thread">
               <tr>
                 <th className="columns">Username</th>
+                <th className="columns">Academy</th>
+                <th className="columns">Coach</th>
                 <th className="columns">Description</th>
                 <th className="columns">Duration</th>
                 <th className="columns">Date</th>
